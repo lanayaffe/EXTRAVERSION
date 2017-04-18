@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>FYP - EXTRAVERSION UI</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript">
+        window.onload = function(){ 
+            //Get submit button
+            var submitbutton = document.getElementById("tfq");
+            //Add listener to submit button
+            if(submitbutton.addEventListener){
+                submitbutton.addEventListener("click", function() {
+                    if (submitbutton.value == 'search'){
+                        submitbutton.value = '';
+                    }
+                });
+            }
+        }
+        </script>
+    </head>
+    <body>
+        
+        <header>
+            <div id="page-header">
+            <div class="col-5">
+                <a href="extraversion.html"><img src="img/logo.png" alt="Destination Logo" width="40px"/></a>
+            </div>
+            <div class="col-5">
+                <a href="#"><img src="img/chat.png" alt="chat icon" width="45%"/></a>
+            </div>
+            <div class="col-5">
+                <a href="fb-profile.html"><img src="img/profile.png" alt="profile icon" width="50%"/></a>
+            </div>
+            <div class="col-5">
+                <a href="#"><img src="img/search.png" alt="search icon" width="50%"/></a>
+            </div>
+            <div class="col-5">
+                <a href="notifications.html"><img src="img/notification.png" alt="notifications icon" width="50%"/></a>
+            </div>
+        </div>
+        </header>
+    
+        <div class="notifications">
+                <img src="img/notifications.png" alt="Notifications" width="100%" class="notifications"/>
+        </div>
+        
+    </body>
+</html>
